@@ -3,14 +3,17 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './Components/store'
-
 import Navbar from './Components/Navbar';
 import About from './Components/About';
 import Footer from './Components/Footer';
 import ContactForm from './Components/ContactUs';
 import TodoList from './Components/TODO';
+import Intro from './Components/Intro';
 
 function App() {
+
+
+
   const [mode, setMode] = useState('light');
   const [text, settext] = useState('dark');
 
@@ -49,11 +52,12 @@ function App() {
 
   return (
     <>
-      <Navbar name="To-Do App" home="Home" about="About" contactus="Contact Us" mode={mode} text={text} togglemode={toggleMode} aboutmode={aboutMode} />
 
-      <Provider store={store}>/
+      <Intro />
+      <Provider store={store}>
+        <Navbar name="To-Do App" home="Home" about="About" contactus="Contact Us" mode={mode} text={text} togglemode={toggleMode} aboutmode={aboutMode} />
         <Routes>
-          <Route path="/" element={<TodoList mode={mode} />} />
+          <Route path="/" />
           <Route path="/home" element={<TodoList mode={mode} />} />
           <Route path="/about" element={<About mystyle={myStyle} mode={mode} />} />
           <Route path="/contactus" element={<ContactForm mode={mode} />} />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon, faX, faXmark, faXmarkCircle } from '@fortawesome/free-solid-svg-icons';
+import { faSun, faMoon} from '@fortawesome/free-solid-svg-icons';
 import Signup from './SignUp';
 import Signin from './SignIn';
 import Alert from './Alert';
@@ -12,7 +12,7 @@ export default function Navbar(props) {
     const [showSignup, setShowSignup] = useState(false);
     const [showSignin, setShowSignin] = useState(false);
     const [alert, setAlert] = useState(null);
-    const [Check, setCheck] = useState(false);
+    const [Check, setCheck] = useState(true);
 
 
 
