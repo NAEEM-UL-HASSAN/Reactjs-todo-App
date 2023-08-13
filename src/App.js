@@ -53,14 +53,14 @@ function App() {
   return (
     <>
 
-      <Intro />
       <Provider store={store}>
         <Navbar name="To-Do App" home="Home" about="About" contactus="Contact Us" mode={mode} text={text} togglemode={toggleMode} aboutmode={aboutMode} />
+        <Intro />
         <Routes>
-          <Route path={process.env.PUBLIC_URL + '/'} element={<TodoList mode={mode} />} />
-          <Route path={process.env.PUBLIC_URL + '/home'} element={<TodoList mode={mode} />} />
-          <Route path={process.env.PUBLIC_URL + '/about'} element={<About mystyle={myStyle} mode={mode} />} />
-          <Route path={process.env.PUBLIC_URL + '/contactus'} element={<ContactForm mode={mode} />} />
+          <Route path="/" />
+          <Route path="/home" element={<TodoList mode={mode} />} />
+          <Route path="/about" element={<About mystyle={myStyle} mode={mode} />} />
+          <Route path="/contactus" element={<ContactForm mode={mode} />} />
         </Routes>
         <Footer mode={mode} />
       </Provider>
