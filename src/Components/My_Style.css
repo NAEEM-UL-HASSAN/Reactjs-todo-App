@@ -1,5 +1,4 @@
-
-.intro-body-layout{
+.intro-body-layout {
     position: fixed;
     top: 0;
     left: 0;
@@ -292,7 +291,7 @@
     width: 95%;
     margin-left: 30px;
     margin-top: 25px;
-    /* overflow-y: auto; */
+    overflow-y: auto;
 }
 
 ::-webkit-scrollbar {

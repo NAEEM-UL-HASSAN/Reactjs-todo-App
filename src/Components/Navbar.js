@@ -12,7 +12,7 @@ export default function Navbar(props) {
     const [showSignup, setShowSignup] = useState(false);
     const [showSignin, setShowSignin] = useState(false);
     const [alert, setAlert] = useState(null);
-    const [Check, setCheck] = useState(true);
+    const [Check, setCheck] = useState(false);
 
 
 
