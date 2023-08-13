@@ -396,3 +396,9 @@
     align-items: center;
     justify-content: center;
 }
+
+.apex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

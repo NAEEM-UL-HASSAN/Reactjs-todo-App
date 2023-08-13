@@ -4,7 +4,7 @@ import './My_Style.css'
 const ContactForm = (props) => {
     return (
         <form>
-            <div id="contact" className="contact-container contact-form" style={{ fontFamily: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" }}>
+            <div id="contact" className="contact-container contact-form" style={{ fontFamily: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",marginBottom:'70px' }}>
                 <div className="get-in-touch"
                     style={{
                         backgroundColor: props.mode === 'dark' ? 'rgb(37, 45, 60)' : '#D1D1C4',

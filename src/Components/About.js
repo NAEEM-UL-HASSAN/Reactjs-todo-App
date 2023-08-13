@@ -7,7 +7,7 @@ export default function About(props) {
 
     return (
         <div className='about-card' style={{ marginTop: "100px", fontFamily: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" }}>
-            <h1 className={`text-${props.mode === 'dark' ? 'light' : 'dark'}`} style={{ marginBottom: '30px',fontSize:'5rem' }}>About Us</h1>
+            <h1 className={`text-${props.mode === 'dark' ? 'light' : 'dark'}`} style={{ marginBottom: '30px', fontSize: '5rem' }}>About Us</h1>
             <div className="card mb-3" style={{ ...props.mystyle, maxWidth: "85%", borderRadius: '10px', border: '2px solid black' }}>
                 <div className="row g-0">
                     <div className="col-md-4" >
@@ -24,8 +24,8 @@ export default function About(props) {
 
             <div className="card mb-3" style={{ maxWidth: "85%", borderRadius: '10px', border: '2px solid black' }}>
                 <div className="row g-0">
-                    <div className="col-md-4" style={{ borderRight: '2px solid black' }} >
-                        <img style={{ borderRadius: '20px', marginLeft: '90px' }} src={apex} className="img-fluid rounded-start" alt="..." />
+                    <div className="col-md-4 apex">
+                        <img style={{ borderRadius: '20px' }} src={apex} className="img-fluid rounded-start" alt="..." />
                     </div>
                     <div className="col-md-8" style={props.mystyle}>
                         <div className="card-body">
