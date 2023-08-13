@@ -1,0 +1,375 @@
+/* SignUp/SingIn */
+.dialog-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.dialog-box {
+    margin-top: 270px;
+    position: fixed;
+    top: -100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideDown 1s forwards;
+}
+
+.box-close {
+    animation: slideUp 1s forwards;
+}
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-icon-up {
+    position: absolute;
+    top: -125%;
+    right: 0%;
+    cursor: pointer;
+    width: 5%;
+}
+
+.close-icon-in {
+    position: absolute;
+    top: -85%;
+    right: 1%;
+    cursor: pointer;
+    width: 6%;
+}
+
+
+.close-icon-up:hover {
+    transform: scale(1.2);
+}
+
+.close-icon-in:hover {
+    transform: scale(1.2);
+}
+
+@keyframes slideDown {
+
+    to {
+        top: 0%;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: 0%;
+    }
+
+    to {
+        top: 100%;
+    }
+}
+
+.navbar-brand {
+    margin-right: 160px;
+}
+
+@media screen and (max-width: 767px) {
+    .close-icon-up {
+        top: -210%;
+        width: 10%;
+    }
+
+    .close-icon-in {
+        top: -125%;
+        width: 8%;
+    }
+
+    .dialog-box {
+        margin-top: 345px;
+    }
+
+    .navbar-brand {
+        margin-right: 0px;
+    }
+}
+
+
+/* ContactForm */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.contact-info {
+    background: linear-gradient(to right, #3e596d, #2c3e50, #1e3a4f);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+
+.get-in-touch {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 35px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    outline: none;
+}
+
+.textarea-field {
+    width: 100%;
+    padding: 0.5rem;
+    padding-bottom: 4rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    outline: none;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #0c1e8f;
+    color: white;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .form-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .get-in-touch {
+        width: 48%;
+    }
+}
+
+/*TODO List  */
+
+.todo-body {
+    position: relative;
+}
+
+.todo-body::before {
+    content: "";
+    background: url("tdopic.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.todo-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background-color: black;
+    color: white;
+    border: 4px solid red;
+    width: 355px;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 17px;
+    border-radius: 40px;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.todo {
+    background-color: rgb(215, 225, 225);
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 3%;
+    margin-top: 25px;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+}
+
+.todo label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+#work {
+    padding: 10px;
+    width: 25vw;
+    background-color: rgb(173, 160, 160);
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-right: 5%;
+}
+
+.submit {
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    width: 100px;
+    padding: 5px;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+}
+
+#ywork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    height: 550px;
+    width: 95%;
+    margin-left: 30px;
+    margin-top: 25px;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.mwork-body {
+    background-color: rgb(215, 225, 225);
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30%;
+    width: 30%;
+}
+
+.mwork {
+    background-color: rgb(173, 160, 160);
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-left: 10px;
+    width: 80%;
+    height: 35%;
+    margin-left: 10%;
+    overflow-y: auto;
+}
+
+.todo-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.my-icons {
+    margin-top: 20px;
+    padding: 0% 7%;
+}
+
+@media (max-width: 904px) {
+    .todo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .todo label {
+        font-size: 1.5rem;
+    }
+
+    #work {
+        width: 100%;
+    }
+
+    .todo-heading {
+        font-size: 1.5rem;
+        width: 155px;
+    }
+
+    .submit {
+        width: 80px;
+        padding: 1px;
+    }
+
+    #ywork {
+        margin-inline: auto;
+    }
+
+    .mwork-body {
+        width: 40%;
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+}
+
+@media(max-width: 590px) {
+    .mwork-body {
+        width: 70%;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+    .mwork{
+        font-size: 15px;
+    }
+}
+
+/* About Us */
+
+.about-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
