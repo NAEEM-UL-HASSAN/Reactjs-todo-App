@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .intro-body-layout {
     position: fixed;
     top: 0;
@@ -117,7 +121,8 @@
     .navbar-brand {
         margin-right: 0px;
     }
-    .intro{
+
+    .intro {
         margin-top: 30%;
     }
 }
