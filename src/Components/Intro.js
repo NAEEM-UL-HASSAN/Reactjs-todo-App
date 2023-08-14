@@ -7,6 +7,7 @@ function Intro() {
     const [Check, setCheck] = useState(false);
 
     const navigate = useNavigate();
+    
     const handleButtonClick = () => {
         setCheck(true);
         setTimeout(() => {

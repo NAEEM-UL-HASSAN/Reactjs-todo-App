@@ -12,7 +12,7 @@
 }
 
 .intro {
-    margin-top: 200px;
+    margin-top: 15%;
     position: fixed;
     top: -100%;
     animation: slideDown 1s forwards;
@@ -116,6 +116,9 @@
 
     .navbar-brand {
         margin-right: 0px;
+    }
+    .intro{
+        margin-top: 30%;
     }
 }
 
@@ -397,7 +400,7 @@
     justify-content: center;
 }
 
-.apex{
+.apex {
     display: flex;
     align-items: center;
     justify-content: center;
