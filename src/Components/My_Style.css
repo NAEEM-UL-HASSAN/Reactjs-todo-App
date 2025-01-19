@@ -210,7 +210,7 @@ html {
 
 .todo-body::before {
     content: "";
-    background: url("tdopic.jpg") no-repeat center center/cover;
+    background: url("todopic.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
