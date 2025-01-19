@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import pic from './tdopic.jpg'
 import apex from './apxespace.jpeg'
-import me from './me.jpeg'
+import me from './my-pic.jpg'
 
 export default function About(props) {
 

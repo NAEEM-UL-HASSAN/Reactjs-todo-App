@@ -307,7 +307,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: gray;
 }
 
 .mwork-body {
